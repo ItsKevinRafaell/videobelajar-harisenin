@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    .poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #FFFDF3;
+    }
+
+    .dm-sans {
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .hero-bg-container {
+      background-image: url('assets/images/background/bg-1.jfif');
+      background-color: rgba(0, 0, 0, 0.75);
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 20px;
+    }
+
+    nav {
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="bg-white shadow-sm p-4">
+    <div class="flex items-center justify-between flex-wrap">
+      <img src="assets/images/logo/logo.png" alt="Logo" class="w-32 md:w-50" />
+
+      <button id="menuBtn" class="md:hidden p-2 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <ul class="hidden md:flex items-center space-x-4 mt-2 md:mt-0">
+        <li><a href="#" class="text-gray-500 font-semibold dm-sans text-sm md:text-base">Kategori</a></li>
+        <li><img src="assets/images/avatar/avatar-nav.png" alt="" class="w-8 h-8 md:w-11 md:h-11 rounded-md" /></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <div class="hero-bg-container rounded-lg m-4 md:m-8 p-4 md:p-8 shadow-lg text-center">
+      <div class="max-w-4xl mx-auto py-8 md:py-12 px-4">
+        <h2 class="text-3xl md:text-5xl mb-4 text-white font-bold poppins">Revolusi Pembelajaran: Temukan Ilmu Baru
+          melalui
+          Platform Video Interaktif!
+        </h2>
+        <p class="text-sm md:text-lg mb-4 text-white dm-sans">Temukan ilmu baru yang menarik dan mendalam melalui
+          koleksi
+          video
+          pembelajaran berkualitas tinggi. Anda juga dapat berpartisipasi dalam latihan interaktif yang akan
+          meningkatkan pemahaman Anda.
+        </p>
+        <button
+          class="bg-green-500 text-white font-semibold py-2 px-4 md:py-3 md:px-5 rounded-md dm-sans hover:bg-green-600 text-sm md:text-base">
+          Temukan Video Course untuk Dipelajari!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-section">
+    <div class="container mx-auto mt-10 px-4">
+      <h1 class="text-xl md:text-3xl font-bold mb-4 poppins">Koleksi Video Pembelajaran Unggulan</h1>
+      <p class="mb-8 text-sm md:text-lg text-gray-600 dm-sans">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
+      <div class="flex mb-4 overflow-x-auto pb-2">
+        <button
+          class="text-red-500 border-b-2 border-red-500 focus:outline-none dm-sans text-sm whitespace-nowrap">Semua
+          Kelas</button>
+        <button class="ml-5 dm-sans text-sm whitespace-nowrap">Pemasaran</button>
+        <button class="ml-5 dm-sans text-sm whitespace-nowrap">Desain</button>
+        <button class="ml-5 dm-sans text-sm whitespace-nowrap">Pengembangan Diri</button>
+        <button class="ml-5 dm-sans text-sm whitespace-nowrap">Bisnis</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 p-2 md:p-4">
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-1.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-2.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-3.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 p-2 md:p-4">
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-4.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-5.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-6.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 p-2 md:p-4">
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-7.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-8.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+        <div class="course-card bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="assets/images/card-images/card-9.jfif" alt="Course Image"
+            class="w-full h-40 md:h-48 object-cover p-2 rounded-xl">
+          <div class="course-details p-3 md:p-4">
+            <h2 class="course-title text-base md:text-lg font-semibold poppins">Big 4 Auditor Financial Analyst</h2>
+            <p class="course-description text-gray-600 text-xs md:text-sm mb-2 dm-sans">
+              Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan...
+            </p>
+            <div class="instructor-info flex gap-2 items-center mt-2 md:mt-4">
+              <img src="assets/images/avatar/avatar-1.png" alt="Instructor Logo"
+                class="rounded-md w-8 h-8 md:w-10 md:h-10">
+              <div class="learner-info">
+                <b class="instructor-name text-gray-600 dm-sans text-sm">Jenna Ortega</b>
+                <p class="instructor-role text-gray-500 text-xs md:text-sm dm-sans">Senior Accountant di <b>Gojek</b>
+                </p>
+              </div>
+            </div>
+            <div class="course-rating-price flex justify-between items-center mt-2 md:mt-4">
+              <div class="rating flex items-center">
+                <span class="text-yellow-500 text-sm">★★★★☆</span>
+                <span class="ml-2 text-gray-500 dm-sans text-xs md:text-sm">3.5 (86)</span>
+              </div>
+              <p class="font-bold text-lg md:text-2xl text-green-500 poppins">Rp 300K</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-section">
+      <div class="hero-bg-container rounded-lg m-8 p-8 shadow-lg text-center">
+        <div class="max-w-4xl mx-auto py-16 px-4">
+          <h2 class="text-center text-xl text-gray-300 dm-sans">NEWSLETTER</h2>
+          <h3 class="mt-4 text-center text-4xl font-bold text-white poppins">Mau Belajar Lebih Banyak?</h3>
+          <p class="mt-2 text-center text-lg text-gray-200 dm-sans">Daftarkan dirimu untuk mendapatkan informasi
+            terbaru
+            dan
+            penawaran spesial dari program-program terbaik hariesok.id</p>
+          <div class="mt-8 justify-center">
+            <div class=" flex justify-center collapse sm:visible">
+              <input type="email" placeholder="Masukkan Emailmu" class="px-8 py-4 border rounded-l-md dm-sans">
+              <button
+                class="bg-yellow-500 text-white px-6 py-2 rounded-r-md hover:bg-yellow-600 transition duration-300 poppins">Subscribe</button>
+            </div>
+            <div class=" flex flex-col sm:flex-row justify-center visible sm:collapse">
+              <input type="email" placeholder="Masukkan Emailmu"
+                class="mb-4 sm:mb-0 sm:mr-2 px-4 py-2 border rounded-md dm-sans w-full sm:w-auto">
+              <button
+                class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 transition duration-300 poppins">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-white py-8 shadow-md">
+      <div class="container mx-auto px-4 flex justify-between sm:flex-row flex-col">
+        <div class="mb-6">
+          <h1
+            class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500 dm-sans">
+            videobeajar</h1>
+          <p class="text-lg text-black font-bold dm-sans mb-2">Gali Potensi Anda Melalui Pembelajaran Video di
+            hariesok.id!</p>
+          <p class="text-md text-gray-500 dm-sans">Jl. Usman Effendi No. 50 Lowokwaru, Malang</p>
+          <p class="text-md text-gray-500 dm-sans">+62–877–7123–1234</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3  gap-10 mb-6">
+          <div>
+            <h2 class="font-bold text-lg mb-2 dm-sans">Kategori</h2>
+            <ul>
+              <li class="dm-sans text-gray-500">Digital & Teknologi</li>
+              <li class="dm-sans text-gray-500">Pemasaran</li>
+              <li class="dm-sans text-gray-500">Manajemen Bisnis</li>
+              <li class="dm-sans text-gray-500">Pengembangan Diri</li>
+              <li class="dm-sans text-gray-500">Desain</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-lg mb-2 dm-sans">Perusahaan</h2>
+            <ul>
+              <li class="dm-sans text-gray-500">Tentang Kami</li>
+              <li class="dm-sans text-gray-500">FAQ</li>
+              <li class="dm-sans text-gray-500">Kebijakan Privasi</li>
+              <li class="dm-sans text-gray-500">Ketentuan Layanan</li>
+              <li class="dm-sans text-gray-500">Bantuan</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-bold text-lg mb-2 dm-sans">Komunitas</h2>
+            <ul>
+              <li class="dm-sans text-gray-500">Tips Sukses</li>
+              <li class="dm-sans text-gray-500">Blog</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="container mx-auto px-4 m-8 flex items-center text-gray-400 text-sm justify-between">
+        <p>&copy; 2023 Gerobak Sayur All Rights Reserved.</p>
+        <ul class="flex items-center">
+          <li class="mx-2"><img src="assets/images/social-media/linkedin.png" alt=""></li>
+          <li class="mx-2"><img src="assets/images/social-media/facebook.png" alt=""></li>
+          <li class="mx-2"><img src="assets/images/social-media/instagram.png" alt=""></li>
+          <li class="mx-2"><img src="assets/images/social-media/twitter.png" alt=""></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+
+</html>

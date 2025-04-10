@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+  .poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #FFFDF3;
+  }
+
+  .dm-sans {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .required-field::after {
+    content: " *";
+    color: red;
+  }
+
+  .divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divider {
+    flex-grow: 1;
+    border: 0;
+    border-top: 1px solid #ccc;
+    /* Adjust color as needed */
+    margin: 0 10px;
+    /* Adjust spacing between lines and text */
+  }
+
+  .divider-text {
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #555;
+    /* Adjust color as needed */
+  }
+</style>
+</head>
+
+<body>
+  <nav class="bg-white shadow-sm p-4">
+    <div class="flex items-center">
+      <img src="assets/images/logo/logo.png" alt="Logo" class="w-50" />
+    </div>
+  </nav>
+  <div class="form-container flex flex-col min-h-screen items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-md ">
+      <h2 class="text-2xl font-bold text-center mb-2 poppins">Masuk ke Akun</h2>
+      <p class="text-center mb-6 dm-sans text-gray-500">Yuk, lanjutin belajarmu di videobelajar.</p>
+      <form action="home_page.html">
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700 required-field dm-sans">E-Mail</label>
+          <input type="email" id="email" required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2 dm-sans" />
+        </div>
+        <div class="mb-4 relative">
+          <label for="password" class="block text-sm font-medium text-gray-700 required-field dm-sans">Kata
+            Sandi</label>
+          <input type="password" id="password" required
+            class="mt-1 block w-full border border-gray-300 rounded-md p-2 dm-sans" />
+        </div>
+        <a href="#" class="text-sm text-black hover:underline mb-4 block font-semibold text-right dm-sans">Lupa
+          Password?</a>
+        <a href="home_page.html">
+          <button type="submit"
+            class="w-full bg-green-500 text-white font-bold py-2 rounded-md hover:bg-green-600 dm-sans">Masuk</button>
+        </a>
+      </form>
+      <a href="register_page.html">
+        <button type="submit"
+          class="w-full bg-green-100 text-green-500 font-bold py-2 rounded-md mt-4 dm-sans">Daftar</button>
+      </a>
+      <div class="divider-container mt-4">
+        <hr class="divider">
+        <span class="divider-text dm-sans">atau</span>
+        <hr class="divider">
+      </div>
+      <button type="submit"
+        class="w-full bg-white border border-gray-300 text-gray-700 dm-sans font-semibold py-2 rounded-md mt-4 flex items-center justify-center">
+        <img src="assets/images/social-media/google-icon-logo-svgrepo-com.svg" alt="Google Logo" class="h-5 mr-2" />
+        Masuk dengan Google
+      </button>
+    </div>
+  </div>
+</body>
+
+</html>
